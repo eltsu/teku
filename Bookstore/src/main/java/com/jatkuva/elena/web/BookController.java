@@ -19,6 +19,11 @@ public class BookController {
 	public String index(Model model){
 		return "index";
 	}
+
+    @RequestMapping(value="/login")
+    public String login() {	
+        return "login";
+    }	
 	
     @RequestMapping(value="/booklist")
     public String bookList(Model model) {	
